@@ -1,0 +1,163 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+/* common css */
+body {
+  background-color: #fafcff;
+  font-family: Inter;
+}
+.container-width {
+  width: 100%
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+.color-red {
+  color: #e95a08;
+}
+/* common css */
+/* custom css start */
+/* nav section start */
+.nav-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+}
+.header-left {
+}
+.header-left img {
+  width: 135px;
+  height: 82px;
+}
+.header-right {
+}
+.header-right ul {
+  display: flex;
+  gap: 40px;
+  list-style: none;
+}
+.header-right ul li {
+}
+.header-right ul li a {
+  text-decoration: none;
+  color: #8987a1;
+  font-weight: 400;
+}
+.header-right ul li a:hover {
+  color: rgb(37, 36, 50);
+  font-weight: 700;
+}
+.header-right ul li a.active {
+  color: rgb(0, 0, 0);
+  font-weight: 700;
+}
+.header-right ul li a.cart-focus {
+  color: rgb(0, 0, 0);
+  font-weight: 400;
+}
+/* nav section end */
+/* banner section start */
+.banner-section {
+  display: flex;
+  margin-top: 30px;
+  align-items: center;
+}
+.banner-left {
+}
+.banner-left h1 {
+  font-family: Noto Serif;
+  font-size: 65px;
+  font-weight: 700;
+  line-height: 89px;
+  color: #000000;
+}
+
+.banner-left p {
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 27px;
+  letter-spacing: 0%;
+}
+.banner-right {
+}
+.banner-right img {
+  width: 570px;
+  height: 355px;
+}
+/* banner section end */
+
+/* for mobile responsive design  */
+@media screen and (max-width: 430px) {
+  .nav-section {
+    width: 361px;
+  }
+
+  .header-right ul li {
+    display: none;
+  }
+  .header-right ul li:last-child {
+    display: block;
+  }
+  /* banner section */
+  .banner-section {
+    flex-direction: column;
+    text-align: center;
+    padding: 10px;
+  }
+
+  .banner-left {
+    order: 2;
+    width: 100%;
+    height: auto;
+  }
+
+  .banner-right {
+    order: 1;
+    width: 100%;
+    height: auto;
+  }
+  .banner-right img {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    display: block;
+    margin: 0 auto;
+  }
+
+.banner-left h1{
+    font-size: 24px;
+    font-weight: 700;
+    text-align: left;
+    margin-left: 12px;
+
+}
+.banner-left p{
+    
+    text-align: left;
+    margin-left: 12px;
+    
+
+}
+.display-block {
+        display: block;
+        margin: 0px;
+        padding: 0px;
+        margin-top: -50px;
+    }
+
+
+
+
+
+
+
+
+
+
+
+}
