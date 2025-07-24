@@ -10,7 +10,7 @@ body {
   font-family: Inter;
 }
 .container-width {
-  width: 100%
+  width: 100%;
   max-width: 1140px;
   margin: 0 auto;
   padding: 0 16px;
@@ -90,11 +90,76 @@ body {
   height: 355px;
 }
 /* banner section end */
+/* plants section start */
+.plants {
+}
+.plants-top {
+  text-align: center;
+}
+.plants-top h2 {
+  font-size: 50px;
+  font-weight: 700;
+}
+.plants-top p {
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 20px;
+  font-weight: 400;
+}
+.plants-bottom {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  margin-top: 20px;
+  gap: 10px;
+  justify-items: center;
+  align-items: center;
+}
+.plants-flower {
+}
+/* .plants-flower img {
+  width: 270px;
+  height: 322.94px;
+} */
+.plants-flower img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+.text-button-area {
+  text-align: center;
+}
+.plants-flower p {
+  color: rgb(17, 17, 17);
+  font-size: 22px;
+  font-weight: 500;
+}
+
+.plants-flower p > .usd {
+  color: rgb(17, 17, 17);
+  font-family: Inter;
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.plants-flower button {
+  width: 270px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* padding: 26px 50px 26px 50px; */
+  background-color: rgb(233, 90, 8);
+  color: rgb(255, 255, 255);
+  border: none;
+}
+/* plants section start */
 
 /* for mobile responsive design  */
+/* for mobile responsive design  */
+/* for mobile responsive design  */
 @media screen and (max-width: 430px) {
-  .nav-section {
-    width: 361px;
+  .nav-section,
+  .plants {
+    width: 100%;
   }
 
   .header-right ul li {
@@ -103,7 +168,7 @@ body {
   .header-right ul li:last-child {
     display: block;
   }
-  /* banner section */
+  /* banner section  start*/
   .banner-section {
     flex-direction: column;
     text-align: center;
@@ -129,35 +194,35 @@ body {
     margin: 0 auto;
   }
 
-.banner-left h1{
+  .banner-left h1 {
     font-size: 24px;
     font-weight: 700;
     text-align: left;
     margin-left: 12px;
-
-}
-.banner-left p{
-    
+  }
+  .banner-left p {
     text-align: left;
     margin-left: 12px;
-    
+  }
+  .display-block {
+    display: block;
+    margin: 0px;
+    padding: 0px;
+    margin-top: -50px;
+  }
 
-}
-.display-block {
-        display: block;
-        margin: 0px;
-        padding: 0px;
-        margin-top: -50px;
-    }
+  .plants-bottom {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 0 12px;
+    gap: 16px;
+  }
+  .plants-bottom img {
+    width: 100%;
+    height: auto;
+  }
 
-
-
-
-
-
-
-
-
-
-
+  .plants-flower button {
+    width: 100%;
+  }
 }
